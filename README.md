@@ -23,3 +23,21 @@ Add the new generated token in your Maven setting.xml file
 ![image](https://github.com/ahmed82/GitHub-packages/assets/9446035/f90e4b60-266e-44ab-9755-016909523804)
 
 
+4.  Update the `pom.xml` file located in project.
+```
+<distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>GitHub OWNER Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
+   </repository>
+</distributionManagement>
+```
+
+**Note** add packaging to package the library
+```
+<packaging>jar</packaging>
+```
+
+## Installing a package
+TBD
